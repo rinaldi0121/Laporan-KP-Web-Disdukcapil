@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penomoran Surat Otomatis</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="judul">
+      <h1>PENOMORAN SURAT OTOMATIS DISDUKCAPIL</h1>
+    </div>
+    <br><br>
+    <form class="form1">
+      <label for="bidang">Pilih Bidang :</label>
+      <select name="bidang" id="bidang" class="bidang"  title="Pilih bidang">
+      <option value="">- Nama Bidang -</option>
+      <option value="800" id="I">Sekretariat</option>
+      <option value="900" id="I">Keuangan</option>
+      <option value="518" id="II">Capil</option>
+      <option value="473" id="III">PIAK</option>
+      <option value="473.1" id="IV">Dafduk</option>
+    </select>
+      <label for="nomor">Masukkan Nomor Urut : </label>
+      <input type="number" id="nomor" name="nomor" title="Masukkan nomor surat"><br>
+      <button id="button" type="button" onclick="buatSurat()" title="Klik untuk membuat nomor surat">Buat Nomor</button>
+    </form><br><br>
+
+    <table>
+      <tr>
+        <th><label for="tampil">Nomor Surat : </label></th>
+        <th><p id="tampil" name="tampil"></p></th>
+        <th><button onclick="copy()" class="copy"><img src="assets/download.png" alt="copy nomor" title="Copy nomor"></button></th>
+      </tr>
+    </table> 
+    
+    
+    </body>
+</html>
